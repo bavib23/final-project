@@ -26,7 +26,7 @@ export default async function RootLayout(props: Props) {
   // 2. Get the current logged in user from the database using the sessionToken value
   // 3. Make decision whether to show the login and register links or not
 
-  // 1. Checking if the sessionToken cookie exists
+  // 1. Checking if the sessionToken cookie exists.
   const cookieStore = cookies();
   const sessionToken = cookieStore.get('sessionToken');
 
